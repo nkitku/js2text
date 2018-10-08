@@ -48,5 +48,7 @@
 	"devDependencies": {
 		"vscode": "0.10.x"
 	},
-	"dependencies": {}
+	"dependencies": {
+		"typescript": "^3.1.1"
+	}
 }
