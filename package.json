@@ -1,0 +1,52 @@
+{
+	"name": "js2text",
+	"description": "Convert JS to Text",
+	"icon": "images/icon.png",
+	"galleryBanner": {
+		"color": "#e1e1e1",
+		"theme": "light"
+	},
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"bugs": {
+		"url": ""
+	},
+	"license": "MIT",
+	"version": "0.0.1",
+	"publisher": "nkitku",
+	"engines": {
+		"vscode": "^0.10.0"
+	},
+	"categories": [
+		"Other",
+		"Programming Languages"
+	],
+	"keywords": [
+		"eval",
+		"extension",
+		"javascript",
+		"js"
+	],
+	"activationEvents": [
+		"onCommand:extension.js2text"
+	],
+	"main": "./out/extension",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.js2text",
+				"title": "Convert JS to Text"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
+		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
+	},
+	"devDependencies": {
+		"vscode": "0.10.x"
+	},
+	"dependencies": {}
+}
