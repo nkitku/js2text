@@ -13,7 +13,7 @@ In the command palette (`F1`) type **JS to Text**. You should see the following 
 - Convert JS to Text
 
 ## Demo 
-<img src="./images/js2text.gif">
+<img src="https://raw.githubusercontent.com/nkitku/js2text/master/images/js2text.gif">
 
 ### Convert JS to Text
 
