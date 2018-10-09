@@ -30,7 +30,8 @@
 		"js"
 	],
 	"activationEvents": [
-		"onCommand:extension.js2text"
+		"onCommand:extension.js2text",
+		"onCommand:extension.mathJs2text"
 	],
 	"main": "./out/extension",
 	"contributes": {
@@ -38,6 +39,10 @@
 			{
 				"command": "extension.js2text",
 				"title": "Convert JS to Text"
+			},
+			{
+				"command": "extension.mathJs2text",
+				"title": "Convert MathJS to Text"
 			}
 		]
 	},
@@ -46,9 +51,13 @@
 		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
 	},
 	"devDependencies": {
-		"vscode": "0.10.x"
+		"vscode": "0.10.x",
+		"typescript": "^3.1.1"
 	},
 	"dependencies": {
-		"typescript": "^3.1.1"
+		"@types/lodash": "^4.14.117",
+		"@types/mathjs": "^4.4.1",
+		"lodash": "^4.17.11",
+		"mathjs": "^5.2.0"
 	}
 }
