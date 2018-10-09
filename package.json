@@ -8,13 +8,13 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": ""
+		"url": "https://github.com/nkitku/js2text"
 	},
 	"bugs": {
-		"url": ""
+		"url": "https://github.com/nkitku/js2text/issues"
 	},
 	"license": "MIT",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "nkitku",
 	"engines": {
 		"vscode": "^0.10.0"
