@@ -14,10 +14,10 @@
 		"url": "https://github.com/nkitku/js2text/issues"
 	},
 	"license": "MIT",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"publisher": "nkitku",
 	"engines": {
-		"vscode": "^0.10.0"
+		"vscode": "^1.1.29"
 	},
 	"categories": [
 		"Other",
@@ -47,17 +47,20 @@
 		]
 	},
 	"scripts": {
-		"vscode:prepublish": "node ./node_modules/vscode/bin/compile",
-		"compile": "node ./node_modules/vscode/bin/compile -watch -p ./"
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install"
 	},
 	"devDependencies": {
-		"vscode": "0.10.x",
-		"typescript": "^3.1.1"
+		"typescript": "^2.6.1",
+		"vscode": "^1.1.29"
 	},
 	"dependencies": {
-		"@types/lodash": "^4.14.117",
-		"@types/mathjs": "^4.4.1",
+		"@types/lodash": "^4.14.120",
+		"@types/mathjs": "^4.4.5",
+		"@types/node": "^10.12.24",
 		"lodash": "^4.17.11",
-		"mathjs": "^5.2.0"
+		"mathjs": "^5.4.2"
 	}
 }
